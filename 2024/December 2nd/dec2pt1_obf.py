@@ -1,0 +1,2 @@
+print(f"{sum((lambda r: all(1<=abs(d)<=3 for d in [r[i+1]-r[i] for i in range(len(r)-1)]) and (all(d>0 for d in [r[i+1]-r[i] for i in range(len(r)-1)]) or all(d<0 for d in [r[i+1]-r[i] for i in range(len(r)-1)])))([*map(int,l.split())]) for l in open('dec2input.txt'))}")
+# 321
